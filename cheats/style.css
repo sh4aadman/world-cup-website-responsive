@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+/* fonts and some utilites of the body */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: aliceblue;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 30px;
+
+
+
+}
+
+
+
+
+/* center-flexed header */
+
+header {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+
+/* again center-flexed the whole banner portion */
+
+.banner {
+
+    background-color: black;
+
+    color: aliceblue;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 1000px;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+/* wait, they should be 50% */
+
+.banner-box,
+.banner-image {
+
+    width: 50%;
+
+}
+
+
+
+
+/* styled the .banner-box */
+
+.banner-box {
+
+    margin: 35px;
+
+}
+
+
+
+
+.banner-box h1 {
+
+    font-weight: 700;
+
+    font-size: 45px;
+
+    margin: 0;
+
+}
+
+
+
+
+.banner-box p {
+
+    font-weight: 200;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+/* banner link */
+
+.banner-link {
+
+    border: 1px solid red;
+
+    border-radius: 4px;
+
+    background-color: red;
+
+    padding: 5px;
+
+    margin: 0;
+
+    width: 120px;
+
+    height: 25px;
+
+    transition-property: transform;
+
+    transition-duration: .5s;
+
+    transition-timing-function: linear;
+
+
+
+
+}
+
+
+
+
+.banner-link a {
+
+    text-decoration: none;
+
+    color: aliceblue;
+
+}
+
+
+
+
+.banner-link:hover {
+
+    transform: scale(1.1);
+
+    transform-origin: center;
+
+    background-color: aliceblue;
+
+}
+
+
+
+
+.banner-link a:hover {
+
+    color: red;
+
+}
+
+
+
+
+/* twirked the .banner-image */
+
+.banner-image img {
+
+    width: 100%;
+
+}
+
+
+
+
+/* here is the main body art of the website */
+
+main {
+
+    display: flex;
+
+    align-items: flex-start;
+
+}
+
+
+
+
+/* flexed the side navigation and the main grid */
+
+.nav-and-transfer {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 3em;
+
+}
+
+
+
+
+/* side navigation bar */
+
+.side-nav {
+
+    display: grid;
+
+    grid-template-rows: repeat(3, 1fr);
+
+    align-items: center;
+
+    margin: 0;
+
+    background-color: black;
+
+    border-radius: 7px;
+
+}
+
+
+
+
+.nav-link {
+
+    background-color: aliceblue;
+
+    color: black;
+
+    font-weight: 500;
+
+    font-size: 20px;
+
+    margin: 4px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 7px;
+
+}
+
+
+
+
+.nav-link:hover {
+
+    background-color: red;
+
+    color: aliceblue;
+
+}
+
+
+
+
+/* our grid section */
+
+.transfer-news {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    row-gap: 1.5em;
+
+    column-gap: 1em;
+
+}
+
+
+
+
+/* and the unite box of the grid- transfer tile */
+
+.transfer-tile {
+
+    border: 1px solid black;
+
+    border-radius: 10px;
+
+    width: 312px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .8em;
+
+}
+
+.transfer-img {
+
+    width: 100%;
+
+}
+
+
+
+
+.transfer-info {
+
+    margin-left: .3em;
+
+}
+
+
+
+
+.transfer-info h2 {
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+}
+
+
+
+
+.transfer-info a {
+
+    border: 1px solid black;
+
+    text-decoration: none;
+
+    margin-top: 20px;
+
+}
+
+
+
+
+.transfer-info a:hover {
+
+    color: black;
+
+}
+
+
+
+
+.transfer-link {
+
+    font-weight: 500;
+
+    font-size: 16x;
+
+    color: red;
+
+    border-radius: 7px;
+
+    padding: .3em;
+
+
+
+}
+
+
+
+
+.visitor-count {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+}
+
+
+
+
+/* view-all display */
+
+.view-all {
+
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+
+    justify-items: center;
+
+
+
+}
+
+
+
+
+.view-all a {
+
+    border: 1px solid red;
+
+    border-radius: 4px;
+
+    background-color: red;
+
+    padding: 5px;
+
+    text-decoration: none;
+
+    text-decoration: none;
+
+    color: aliceblue;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+
+.view-all:hover {
+
+    background-color: aliceblue;
+
+}
+
+
+
+
+.view-all a:hover {
+
+    color: red;
+
+}
+
+
+
+
+/* finally came to footer */
+
+
+
+
+/* wait, it's a footer attribute */
+
+footer {
+
+    background-color: black;
+
+    padding: 5px;
+
+}
+
+
+
+
+/* comes to the center, Goal! */
+
+.footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1em;
+
+    color: aliceblue;
+
+    font-weight: 500;
+
+}
+
+
+
+
+.horizontal-line {
+
+    border: 1x solid aliceblue;
+
+}
+
+
+
+
+/* footer links with the flex: space around */
+
+.footer-ex {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+
+
+
+.footer-link {
+
+    text-decoration: none;
+
+    font-weight: 300;
+
+    font-size: 16px;
+
+    color: aliceblue;
+
+}
+
+
+
+
+.footer-link:hover {
+
+    color: red;
+
+}
+
+
+
+
+/* tiny & cute social links */
+
+.social-link {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-size: 10px;
+
+    margin: 25px 0 5px;
+
+}
+
+
+
+
+.social-link:hover {
+
+    color: red;
+
+}
+
+
+
+
+.fa-brands {
+
+    color: aliceblue;
+
+}
+
+
+
+
+.fa-brands:hover {
+
+    color: red;
+
+}
+
+
+
+
+/* here comes the most important thing- media queries */
+
+@media only screen and (max-width: 688px) {
+
+    header {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+
+    .banner {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100vw;
+
+        font-size: smaller;
+
+    }
+
+
+
+
+    .banner-box {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+
+
+    .banner-box h1 {
+
+        font-size: 22px;
+
+    }
+
+
+
+    .banner-box p {
+
+        font-size: 14px;
+
+    }
+
+
+
+
+    .banner-link {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+
+
+
+    .nav-and-transfer {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+
+
+    .side-nav {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        background-color: aliceblue;
+
+        font-weight: 500;
+
+    }
+
+
+
+    .nav-link {
+
+        font-weight: 500;
+
+        font-size: 20px;
+
+        border: 1px solid #E8E8E8;
+
+        padding: .7em;
+
+    }
+
+
+
+
+    .transfer-news {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+
+
+    .transfer-info {
+
+        margin-left: 0.5em;
+
+    }
+
+
+
+
+    .footer-ex {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+
+
+    .social-link {
+
+        justify-content: space-around;
+
+    }
+
+
+
+    .view-all {
+
+        display: none;
+
+    }
+
+}
+
+
+
+
+/* here comes the tablet view */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    .nav-and-transfer {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        align-content: stretch;
+
+    }
+
+
+
+    .side-nav {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        background-color: aliceblue;
+
+        font-weight: 500;
+
+    }
+
+
+
+
+    .nav-link {
+
+        font-weight: 500;
+
+        font-size: 20px;
+
+        border: 1px solid #E8E8E8;
+
+    }
+
+
+
+    .transfer-news {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+
+/* view-all visibility hidden in desktop view */
+
+@media only screen and (min-width: 993px) {
+
+    .view-all {
+
+        display: none;
+
+    }
+
+}
