@@ -252,8 +252,6 @@ main {
 
     border-radius: 7px;
 
-    text-decoration: none;
-
 }
 
 
@@ -272,14 +270,14 @@ main {
 
 /* our grid section */
 
-.transfer-news {
-
+.match-box {
+    
     display: grid;
-
+    
     grid-template-columns: repeat(3, 1fr);
-
+    
     row-gap: 1.5em;
-
+    
     column-gap: 1em;
 
 }
@@ -287,101 +285,74 @@ main {
 
 
 
-/* and the unite box of the grid- transfer tile */
-
-.transfer-tile {
-
-    border: 1px solid black;
-
-    border-radius: 10px;
-
-    width: 312px;
+.match-tile{
 
     display: flex;
 
     flex-direction: column;
 
-    gap: .8em;
+    align-items: center;
 
-}
+    border: 1px solid #E8E8E8;
 
-.transfer-img {
+    border-radius: 10px;
 
-    width: 100%;
-
-}
-
-
-
-
-.transfer-info {
-
-    margin-left: .3em;
+    padding: 1em;
 
 }
 
 
 
 
-.transfer-info h2 {
-
-    font-weight: 600;
-
-    font-size: 18px;
-
-}
-
-
-
-
-.transfer-info a {
-
-    border: 1px solid black;
-
-    text-decoration: none;
-
-    margin-top: 20px;
-
-}
-
-
-
-
-.transfer-info a:hover {
-
-    color: black;
-
-}
-
-
-
-
-.transfer-link {
-
-    font-weight: 500;
-
-    font-size: 16x;
-
-    color: red;
-
-    border-radius: 7px;
-
-    padding: .3em;
-
-
-
-}
-
-
-
-
-.visitor-count {
+.vs-flags{
 
     display: flex;
 
-    justify-content: space-around;
+    gap: .3em;
 
-    align-items: center;
+}
+
+
+
+
+.vs-flags h1{
+
+    font-weight: 700;
+
+    font-size: 16px;
+
+}
+
+
+
+
+.vs-country-name{
+
+    display: flex;
+
+    gap: .3em;
+
+}
+
+
+
+
+.vs-country-name h1{
+
+    font-weight: 600;
+
+    font-size: 20px;
+
+}
+
+
+
+
+.vs-details h3{
+
+    font-weight: 400;
+
+    font-size: 16px;
 
 }
 
@@ -696,22 +667,11 @@ footer {
 
 
 
-    .transfer-news {
+    .match-box {
 
         grid-template-columns: repeat(1, 1fr);
 
     }
-
-
-
-
-    .transfer-info {
-
-        margin-left: 0.5em;
-
-    }
-
-
 
 
     .footer-ex {
@@ -789,7 +749,7 @@ footer {
 
 
 
-    .transfer-news {
+    .match-box {
 
         grid-template-columns: repeat(2, 1fr);
 
